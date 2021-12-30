@@ -1,5 +1,7 @@
 # 阿里巴巴nacos配置中心-PHP客户端
 
+> 项目基于[php-nacos](https://github.com/neatlife/php-nacos)修改，由于原项目维护进度缓慢，故在原有基础上做依赖更新。
+
 [Nacos配置中心](https://github.com/alibaba/nacos)的PHP客户端，更多关于Nacos配置中心的介绍，可以查看[Nacos配置中心Wiki](https://github.com/alibaba/nacos/wiki)。
 
 ### 特性

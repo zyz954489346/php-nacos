@@ -1,16 +1,16 @@
 {
-  "name": "alibaba/nacos",
+  "name": "ze/nacos-connect",
   "description": "阿里巴巴nacos配置中心php客户端",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "suxiaolin",
-      "email": "dear.lin@live.com"
+      "name": "Ze",
+      "email": "954489346zyz@sina.com"
     }
   ],
   "require": {
-    "guzzlehttp/guzzle": "^6.3",
+    "guzzlehttp/guzzle": "^6.3 | ^7.0",
     "monolog/monolog": "^1.24|^2.0",
     "ext-json": "*"
   },
