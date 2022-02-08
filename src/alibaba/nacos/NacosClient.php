@@ -33,6 +33,8 @@ class NacosClient implements NacosClientInterface
             $listenerConfigRequest->setGroup($group);
             $listenerConfigRequest->setTenant($tenant);
             $listenerConfigRequest->setContentMD5(md5($config));
+            $listenerConfigRequest->setUsername(NacosConfig::getUsername());
+            $listenerConfigRequest->setPassword(NacosConfig::getPassword());
 
             try {
                 $response = $listenerConfigRequest->doRequest();
@@ -61,6 +63,8 @@ class NacosClient implements NacosClientInterface
         $getConfigRequest->setDataId($dataId);
         $getConfigRequest->setGroup($group);
         $getConfigRequest->setTenant($tenant);
+        $getConfigRequest->setUsername(NacosConfig::getUsername());
+        $getConfigRequest->setPassword(NacosConfig::getPassword());
         
         try {
             $response = $getConfigRequest->doRequest();

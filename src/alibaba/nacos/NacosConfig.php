@@ -77,6 +77,25 @@ class NacosConfig
      */
     private static $isDebug = false;
 
+    private static $username;
+    private static $password;
+
+    public static function getUsername() {
+        return self::$username;
+    }
+
+    public static function setUsername($username) {
+        self::$username = $username;
+    }
+
+    public static function getPassword() {
+        return self::$password;
+    }
+
+    public static function setPassword($password) {
+        self::$password = $password;
+    }
+
     /**
      * @return string
      */
